@@ -13,7 +13,9 @@
                     <h3 class="post-subtitle">{{ $artikel->deskripsi }}</h3>
                 </a>
                 <p>
-                    <strong> Penulis : {{ $artikel->penulis }}</strong>
+                    <strong> Penulis : {{ $artikel->penulis }} </strong>
+                    <br>
+                    <strong> Waktu : {{ $artikel->created_at->diffForHumans() }} </strong>
                 </p>
             </div>
         </div>
